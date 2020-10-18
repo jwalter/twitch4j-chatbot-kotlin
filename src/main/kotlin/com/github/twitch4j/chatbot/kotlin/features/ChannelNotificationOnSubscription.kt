@@ -17,7 +17,8 @@ class ChannelNotificationOnSubscription(eventHandler: SimpleEventHandler) {
             else -> resubscription(event)
         }
         // Send Message
-        event.twitchChat.sendMessage(event.channel.name, message)
+        println(">>>>>>>>>>>> $message")
+        //event.twitchChat.sendMessage(event.channel.name, message)
     }
 
     private fun newSubscription(event: SubscriptionEvent): String {

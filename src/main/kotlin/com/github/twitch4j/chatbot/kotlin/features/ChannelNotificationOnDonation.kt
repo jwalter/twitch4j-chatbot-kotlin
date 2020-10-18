@@ -16,8 +16,9 @@ class ChannelNotificationOnDonation(eventHandler: SimpleEventHandler) {
             event.amount,
             event.source
         )
+        println(">>>>>>>>>>>> $message")
 
-        event.twitchChat.sendMessage(event.channel.name, message)
+        //event.twitchChat.sendMessage(event.channel.name, message)
     }
 
 }

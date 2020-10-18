@@ -15,7 +15,9 @@ class ChannelNotificationOnFollow(eventHandler: SimpleEventHandler) {
             event.user.name,
             event.channel.name
         )
-        event.twitchChat.sendMessage(event.channel.name, message)
+        println(">>>>>>>>>>>> $message")
+
+        //event.twitchChat.sendMessage(event.channel.name, message)
     }
 
 }
