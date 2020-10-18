@@ -21,3 +21,4 @@ out/
 
 # Restore possible ignores that affected the wrapper folder
 !gradle/wrapper/**
+client.log
